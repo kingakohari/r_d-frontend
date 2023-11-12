@@ -39,8 +39,8 @@
         width: 100%;
 		height: 100%;
         line-height: 1.6;
-        color: #555753; 
         font-family: 'Russo One', sans-serif;
+        color: #757973ee; 
     }
 
     .background {
@@ -61,28 +61,30 @@
         z-index: -100;
     }
 
-    .nav-list a {
-        margin-right: 15px; 
-        line-height: 1.2; 
-        text-decoration: none; 
-        color: #FF6600;
-        font-weight: bold; 
-    }
-
-    .nav-list a:hover {
-        color: #0c2f53; 
-        text-decoration: underline; 
-    }
-
     nav {
         position: fixed;
         top: 0;
         width: 100%;
-        z-index: 1000; 
-        padding: 10px 0;
+        padding-top: 10px 0;
         text-align: center;
-        background-color: #f5e6d0; 
+        font-size: 18px;
+        background-color:rgba(0, 0, 0, 0.904);
+        z-index: 1000; 
+        filter: invert(100%);
     }
+    
+    nav a {
+        margin-right: 15px; 
+        line-height: 1.2; 
+        text-decoration: none; 
+        font-weight: bold; 
+    }
+
+    nav a:hover { 
+        text-decoration: underline; 
+        color: #FF6600;
+    }
+
 
     title {
         font-family: 'Russo One', sans-serif;
@@ -90,7 +92,6 @@
 
     div {
         padding: 20px;
-        margin-bottom: 10px; 
     } 
 
     div.grid-container {
@@ -102,11 +103,11 @@
     }
 
     div.box {
-        background-color: rgba(0, 0, 0, 0.904); 
         text-align: center; 
         padding: 20px; 
         border: 1px solid #ccc; 
         border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.904); 
         z-index: 100;
         opacity: 0.8;
     }
@@ -115,6 +116,7 @@
         margin: auto 3%;
         line-height: 1.25;
         font-family: 'Space Grotesk', sans-serif;
+        font-size: 25px;
         color: #99FF00; 
     }
 
@@ -129,14 +131,14 @@
     }
 
     h2 {
-        margin-bottom: 15px; /* Spacing between title and paragraph */
+        scroll-margin-top: 70px;
     }
 
     p {
         margin: auto 3%;
         margin-bottom: 1.5em;
         font-family: 'Pontano Sans', sans-serif;
-        font-size: 18px;
+        font-size: 20px;
         color:#fff;
     }
 
@@ -155,5 +157,6 @@
         padding-top: 1em;
         padding-bottom: 1em;
         text-align: center;
-        color:#fff;
+        color:rgb(63, 62, 61); 
+        filter: invert(100%);
     }
