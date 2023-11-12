@@ -57,7 +57,7 @@
         background-image: url('../1767974.jpg'); 
         background-size: cover;
         background-position: center;
-        background-repeat: repeat-y;
+        background-repeat: no-repeat;
         z-index: -100;
     }
 
@@ -95,10 +95,17 @@
 
     div.grid-container {
         display: grid;
-        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        grid-template-columns: 1fr 1fr;
         gap: 30px 50px;
         padding: 0 100px;
         justify-content: space-evenly;
+    }
+
+    @media screen and (max-width: 600px) {
+        div.grid-container {
+            grid-template-columns: 1fr; 
+            padding: 0 20px; 
+        }
     }
 
     div.box {
@@ -165,59 +172,70 @@
     /********* Form styling **********/
 
 form {
-    max-width: 700px; 
-    margin: 15px auto; 
-    padding: 10px; 
-    background-color: #f2f2f2; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Change to a suitable color */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #333333; /* Text color */
+    font-family: 'Pontano Sans', sans-serif; 
 }
+
+.form-columns {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+}
+
 
 label, 
 input, 
 textarea {
-    display: block; 
-    width: 90%; 
-    margin: auto;
-    padding: 5px; 
+    width: calc(100% - 16px); /* Adjust for padding */
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 
 input, 
 textarea {
-    background-color: #fff;
-    border: 1px solid #ddd; 
-    border-radius: 4px; 
+    background-color: #f2f2f2; /* Lighter background for inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
 input#age {
     position: relative;
-    width: 50px;
-    transform: translateX(-565%);
-    
+    width: 50px;   
 }
 
 textarea {
-    height: auto;
+    height: 150px;
 }
 
 
 button {
-    display: block;
-    width: 30%; 
-    margin: 20px auto; 
-    padding: 10px 15px; 
-    background-color: #007bff; 
-    color: white; 
+    width: calc(100% - 20px); 
+    padding: 10px 8px;
+    margin-top: 10px;
     border: none;
     border-radius: 4px;
-    cursor: pointer; 
-    font-size: 1em; 
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Russo One', sans-serif;
+    background-color: #99FF00;
+    color: #000;
+    filter: invert(100%);
 }
 
 
 button:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
 }
 
 
