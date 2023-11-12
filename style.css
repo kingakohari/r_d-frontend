@@ -41,9 +41,15 @@
         line-height: 1.6;
         color: #555753; 
         font-family: 'Russo One', sans-serif;
+<<<<<<< HEAD
         background-image: url('../1767974.jpg');
         background-size: cover; 
         background-position: center; 
+=======
+        background-image: url('../1767974.jpg'); /* Adjust the path as necessary */
+        background-size: cover; /* This will make sure your image covers the whole area */
+        background-position: center; /* This centers the image */
+>>>>>>> c663636f7047e271a78497eb42979946f7be5f69
         background-repeat: no-repeat;
     }
 
