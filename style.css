@@ -36,15 +36,16 @@
     /*End of CSS reset*/
 
     body {
-        font-family: Arial, sans-serif;
         margin: 2em;
         line-height: 1.6;
+        font-family: 'Russo One', sans-serif;
     }
 
     .nav-list a {
+        margin-right: 15px; 
+        line-height: 1.2; 
         text-decoration: none; 
         color: #333; 
-        margin-right: 15px; 
         font-weight: bold; 
     }
 
@@ -57,6 +58,19 @@
         background-color: #f8f9fa; 
         padding: 10px 0; 
         text-align: center; 
+    }
+
+    title {
+        font-family: 'Russo One', sans-serif;
+    }
+
+    h1, h2 {
+        line-height: 1.25;
+        font-family: 'Space Grotesk', sans-serif;
+    }
+
+    p {
+        font-family: 'Pontano Sans', sans-serif;
     }
 
     footer {
