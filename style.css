@@ -41,16 +41,25 @@
         line-height: 1.6;
         color: #555753; 
         font-family: 'Russo One', sans-serif;
-<<<<<<< HEAD
-        background-image: url('../1767974.jpg');
-        background-size: cover; 
-        background-position: center; 
-=======
-        background-image: url('../1767974.jpg'); /* Adjust the path as necessary */
-        background-size: cover; /* This will make sure your image covers the whole area */
-        background-position: center; /* This centers the image */
->>>>>>> c663636f7047e271a78497eb42979946f7be5f69
+    }
+
+    .background {
+        position: relative; 
+    }
+
+    .background::before {
+        content: ''; 
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url('../1767974.jpg'); 
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
+        opacity: 0.8; 
+        z-index: -100;
     }
 
     .nav-list a {
@@ -62,7 +71,7 @@
     }
 
     .nav-list a:hover {
-        color: #007bff; 
+        color: #0c2f53; 
         text-decoration: underline; 
     }
 
@@ -89,7 +98,7 @@
         line-height: 1.2; 
         letter-spacing: 1px; 
         font-family: 'Russo One', sans-serif;
-        font-size: 2.5em; 
+        font-size: 3em; 
         text-align: center; 
     }
 
@@ -97,7 +106,15 @@
         margin: auto 3%;
         margin-bottom: 1.5em;
         font-family: 'Pontano Sans', sans-serif;
-        color:#000;
+        font-size: 18px;
+        color:#fff;
+    }
+    a[href="#deep-dive"] {
+        text-decoration: underline;
+    }
+
+    a[href="#deep-dive"]:hover {
+        color: #FF6600;
     }
 
     footer {
@@ -106,4 +123,5 @@
         border-top: 1px solid #ccc;
         padding-top: 1em;
         text-align: center;
+        color:#fff;
     }
