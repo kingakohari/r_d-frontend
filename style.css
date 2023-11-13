@@ -1,246 +1,258 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: none;
-    box-sizing: border-box;
-    background: transparent;
-    font-family: inherit;
-    }
-    
-    a {
-    text-decoration: none;
-    }
-    
-    a img {
-    border: none;
-    }
-    
-    button,
-    a {
-    cursor: pointer;
-    color: inherit;
-    }
-    
-    textarea {
-    resize: none;
-    }
-    
-    button,
-    textarea,
-    select {
-    appearance: none !important;
-    border-radius: 0;
-    }
-    
-    /*End of CSS reset*/
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
 
-    body {
-        width: 100%;
-		height: 100%;
-        line-height: 1.6;
-        font-family: 'Russo One', sans-serif;
-        color: #757973ee; 
-    }
+a {
+  text-decoration: none;
+}
 
-    .background {
-        position: relative; 
-    }
+a img {
+  border: none;
+}
 
-    .background::before {
-        content: ''; 
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: url('../1767974.jpg'); 
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: -100;
-    }
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
 
-    nav {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        text-align: center;
-        font-size: 15px;
-        background-color: #99FF00;
-        color: rgb(32, 31, 29); 
-        z-index: 1000; 
-        filter: invert(100%);
-    }
-    
-    nav a {
-        margin-right: 40px; 
-        line-height: 1.2; 
-        text-decoration: none; 
-    }
+textarea {
+  resize: none;
+}
 
-    nav a:hover { 
-        text-decoration: underline; 
-        color: #FF6600;
-    }
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
 
+/*End of CSS reset*/
 
-    title {
-        font-family: 'Russo One', sans-serif;
-    }
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1.6;
+  font-family: "Russo One", sans-serif;
+  color: #757973ee;
+}
 
-    div {
-        padding: 12px;
-    } 
+.background {
+  position: relative;
+}
 
-    div.grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30px 50px;
-        padding: 0 100px;
-        justify-content: space-evenly;
-    }
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../1767974.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  z-index: -100;
+}
 
-    @media screen and (max-width: 600px) {
-        div.grid-container {
-            grid-template-columns: 1fr; 
-            padding: 0 20px; 
-        }
-    }
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  background-color: #99ff00;
+  color: rgb(32, 31, 29);
+  z-index: 1000;
+  filter: invert(100%);
+}
 
-    div.box {
-        text-align: center; 
-        padding: 20px; 
-        border: 1px solid #ccc; 
-        border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.904); 
-        z-index: 100;
-        opacity: 0.8;
-    }
-    
-    h1, h2 {
-        margin: auto 3%;
-        line-height: 1.25;
-        font-family: 'Space Grotesk', sans-serif;
-        font-size: 25px;
-        color: #99FF00; 
-    }
+nav a {
+  margin-right: 40px;
+  line-height: 1.2;
+  text-decoration: none;
+}
 
-    h1 {
-        margin-top: 1em;
-        margin-bottom: 1em; 
-        padding-top: 20px;
-        line-height: 1.2; 
-        letter-spacing: 1px; 
-        font-family: 'Russo One', sans-serif;
-        font-size: 3em; 
-        text-align: center; 
-    }
+nav a:hover {
+  text-decoration: underline;
+  color: #ff6600;
+}
 
-    h2 {
-        scroll-margin-top: 70px;
-    }
+title {
+  font-family: "Russo One", sans-serif;
+}
 
-    p {
-        margin: auto 3%;
-        margin-bottom: 1.5em;
-        font-family: 'Pontano Sans', sans-serif;
-        font-size: 20px;
-        color:#fff;
-    }
+div {
+  padding: 12px;
+}
 
-    a[href="#deep-dive"] {
-        text-decoration: underline;
-    }
+div#intro {
+  padding: 0 50px;
+  white-space: normal;
+  background: linear-gradient(to bottom, #000000, #333444, #111711);
+  box-shadow: 0 0 5px #111711;
+  text-align: justify;
+}
 
-    a[href="#deep-dive"]:hover {
-        color: #FF6600;
-    }
+div.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 50px;
+  padding: 0 100px;
+  justify-content: space-evenly;
+}
 
-    footer {
-        width: 100%;
-        margin-top: 2em;
-        padding-top: 1em;
-        padding-bottom: 1em;
-        text-align: center;
-        font-size: 15px;
-        background-color:#99FF00;
-        color:rgb(32, 31, 29); 
-        filter: invert(100%);
-    }
+@media screen and (max-width: 600px) {
+  div.grid-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
 
-    /********* Form styling **********/
+div.box {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+div.box img {
+    max-width: 300px;
+    display: block; 
+    margin: auto;   
+}
+
+h1,
+h2 {
+  margin: auto 3%;
+  line-height: 1.25;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 25px;
+  color: #99ff00;
+}
+
+h1 {
+  margin-top: 1em;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  font-family: "Russo One", sans-serif;
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {
+  scroll-margin-top: 70px;
+}
+
+p {
+  margin: auto 3%;
+  margin-bottom: 1.5em;
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+span {
+  font-style: italic;
+}
+
+a[href="#deep-dive"] {
+  text-decoration: underline;
+}
+
+a[href="#deep-dive"]:hover {
+  color: #ff6600;
+}
+
+footer {
+  width: 100%;
+  margin-top: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-size: 15px;
+  background-color: #99ff00;
+  color: rgb(32, 31, 29);
+  filter: invert(100%);
+}
+
+/********* Form styling **********/
 
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff; /* Change to a suitable color */
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    color: #333333; /* Text color */
-    font-family: 'Pontano Sans', sans-serif; 
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* Change to a suitable color */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  color: #333333; /* Text color */
+  font-family: "Pontano Sans", sans-serif;
 }
 
 .form-columns {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
 }
 
-
-label, 
-input, 
+label,
+input,
 textarea {
-    width: calc(100% - 16px); /* Adjust for padding */
-    margin-bottom: 10px;
-    padding: 8px;
-    border-radius: 4px;
-    font-family: 'Space Grotesk', sans-serif;
+  width: calc(100% - 16px); /* Adjust for padding */
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
-
-input, 
+input,
 textarea {
-    background-color: #f2f2f2; /* Lighter background for inputs */
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  background-color: #f2f2f2; /* Lighter background for inputs */
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 input#age {
-    position: relative;
-    width: 50px;   
+  position: relative;
+  width: 50px;
 }
 
 textarea {
-    height: 150px;
+  height: 150px;
 }
-
 
 button {
-    width: calc(100% - 20px); 
-    padding: 10px 8px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    font-family: 'Russo One', sans-serif;
-    background-color: #99FF00;
-    color: #000;
-    filter: invert(100%);
+  width: calc(100% - 20px);
+  padding: 10px 8px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Russo One", sans-serif;
+  background-color: #99ff00;
+  color: #000;
+  filter: invert(100%);
 }
-
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
-
 form h2 {
-    text-align: center;
-    color: #333; 
-    margin-bottom: 8px; 
+  text-align: center;
+  color: #333;
+  margin-bottom: 8px;
 }
