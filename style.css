@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+a img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+textarea,
+select {
+  appearance: none !important;
+  border-radius: 0;
+}
+
+/*End of CSS reset*/
+
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1.6;
+  font-family: "Russo One", sans-serif;
+  color: #757973ee;
+}
+
+.background {
+  position: relative;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("1767974.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  z-index: -100;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  background-color: #99ff00;
+  color: rgb(32, 31, 29);
+  z-index: 1000;
+  filter: invert(100%);
+}
+
+nav a {
+  margin-right: 40px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ff6600;
+}
+
+title {
+  font-family: "Russo One", sans-serif;
+}
+
+div {
+  padding: 12px;
+}
+
+div#intro {
+  padding: 0 50px;
+  white-space: normal;
+  box-shadow: 0 0 5px #111711;
+  text-align: justify;
+  background: linear-gradient(to bottom, #000000, #333444, #111711);
+}
+
+div.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 50px;
+  padding: 0 100px;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+  div.grid-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+
+div.box {
+  padding: 20px;
+  border: 0.5px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+div.box img {
+  max-width: 300px;
+  display: block; 
+  margin: auto;   
+}
+
+h1,
+h2 {
+  margin: auto 3%;
+  line-height: 1.25;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 25px;
+  color: #99ff00;
+}
+
+h1 {
+  margin-top: 1em;
+  margin-bottom: 15px;
+  padding-top: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Russo One", sans-serif;
+  font-size: 3em;
+}
+
+h2 {
+  scroll-margin-top: 70px;
+}
+
+p {
+  margin: auto 3%;
+  margin-bottom: 1.5em;
+  font-family: "Pontano Sans", sans-serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+span {
+  font-style: italic;
+}
+
+a[href="#deep-dive"] {
+  text-decoration: underline;
+}
+
+a[href="#deep-dive"]:hover {
+  color: #ff6600;
+}
+
+footer {
+  width: 100%;
+  margin-top: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-size: 15px;
+  background-color: #99ff00;
+  color: rgb(32, 31, 29);
+  filter: invert(100%);
+}
+
+/********* Form styling **********/
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Pontano Sans", sans-serif;
+  color: #333333;
+  background-color: #ffffff; 
+}
+
+.form-columns {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  width: 100%;
+}
+
+label,
+input,
+textarea {
+  width: calc(100% - 16px);
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+input,
+textarea {
+  border-radius: 4px;
+  background-color: #f2f2f2; 
+  border: 1px solid #ccc;
+}
+
+input#age {
+  position: relative;
+  width: 50px;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  width: calc(100% - 20px);
+  padding: 10px 8px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Russo One", sans-serif;
+  background-color: #99ff00;
+  color: #000;
+  filter: invert(100%);
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+form h2 {
+  margin-bottom: 8px;
+  text-align: center;
+  color: #333;
+}

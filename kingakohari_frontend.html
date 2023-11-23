@@ -1,49 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pontano+Sans&family=Russo+One&family=Space+Grotesk&display=swap"
+        rel="stylesheet">
     <title>Frontend Development: A Journey Through Pixels</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 2em;
-            line-height: 1.6;
-        }
-        footer {
-            margin-top: 2em;
-            border-top: 1px solid #ccc;
-            padding-top: 1em;
-            text-align: center;
-        }
-    </style>
 </head>
-<body id="top">
 
-<h1>Frontend Development: A Journey Through Pixels</h1>
-<p>The world of frontend development is vast and ever-evolving. With the myriad of tools, languages, and technologies available, it's a space that demands continuous learning. <a href="#deep-dive">Jump to the deep dive section</a> to understand more about the intricacies of this domain.
-<span>At its core, frontend development is about creating the visual and interactive part of a website. This means transforming designs into functional, interactive web pages. Developers use HTML for structure, CSS for styling, and JavaScript for interactivity to make this happen.</span></p>
+<body id="top" class="background">
 
-<h2>Tools and Development Environments</h2>
-<p> An essential part of a frontend developer's toolkit is the development environment. This isn't just about having a good code editor like Visual Studio Code or Atom, but also tools that assist in writing, testing, and deploying code. For instance, version control systems, particularly Git, are indispensable in modern development. They allow developers to track changes, collaborate with others, and deploy updates seamlessly. Along with this, task runners like Gulp or Webpack enable developers to automate essential tasks such as code compilation, bundling, and minification.</p>
+    <nav class="nav-list">
+        <div class="nav-content">
+            <a href="#top">Home</a>
+            <a href="#tools">Tools and Environments</a>
+            <a href="#apis">APIs in Frontend</a>
+            <a href="#animation">Web Animation</a>
+            <a href="#performance">Performance</a>
+            <a href="#accessibility">Accessibility</a>
+            <a href="#responsive">Responsive Design</a>
+            <a href="#footer">Go to Footer</a>
+        </div>
+    </nav>
 
-<h2>The Role of APIs in Frontend Development</h2>
-<p>With the decoupling of backend and frontend in modern web architectures, especially in the context of single-page applications (SPAs), APIs (Application Programming Interfaces) have become central. They allow frontend developers to fetch data dynamically from the backend, pushing the boundaries of what web apps can do. Fetching data, updating content in real-time, and connecting with third-party services are all facilitated by APIs.</p>
+    <div id="intro">
+        <h1>Frontend Development: A Journey Through Pixels</h1>
+        <p>The world of frontend development is vast and ever-evolving. With the myriad of tools, languages, and
+            technologies available, it's a space that demands continuous learning. <a href="#deep-dive"><br>Jump to the
+                deep
+                dive section</a> to understand more about the intricacies of this domain. <span>At its core, frontend
+                development is about creating the visual and interactive part of a website. <br>This
+                means transforming designs into functional, interactive web pages. Developers use HTML for structure,
+                CSS for styling, and JavaScript for interactivity to make this happen.</span></p>
+    </div>
 
-<h2>Web Animation and Interactivity</h2>
-<p>Modern websites are no longer static. Then there's the world of frameworks and libraries. React, Vue, and Angular are just a few names in the vast ocean of technologies that assist developers in building scalable and maintainable applications. While not necessary for every project, they offer powerful tools and abstractions that can greatly simplify complex tasks. With the power of CSS3 animations and JavaScript libraries like GreenSock, frontend developers can create captivating animations and interactions. These not only make websites more engaging but also can improve user experience by providing feedback, guiding attention, and illustrating complex ideas.</p>
+    <div class="grid-container">
+        <div class="box">
+            <h2 id="tools">Tools and Development Environments</h2>
+            <p> An essential part of a frontend developer's toolkit is the development environment. This isn't just
+                about
+                having
+                a good code editor like Visual Studio Code or Atom, but also tools that assist in writing, testing, and
+                deploying code. For instance, version control systems, particularly Git, are indispensable in modern
+                development. They allow developers to track changes, collaborate with others, and deploy updates
+                seamlessly.
+                Along with this, task runners like Gulp or Webpack enable developers to automate essential tasks such as
+                code
+                compilation, bundling, and minification.</p>
+        </div>
 
-<h2>Performance</h2>
-<p>Performance is another cornerstone of frontend development. A website can be beautifully designed, but if it takes forever to load or lags during interactions, users will likely bounce off. Techniques like image optimization, lazy loading, and minifying code are essential to keep websites snappy and responsive.</p>
+        <div class="box">
+            <h2 id="apis">The Role of APIs in Frontend Development</h2>
+            <p>With the decoupling of backend and frontend in modern web architectures, especially in the context of
+                single-page
+                applications (SPAs), APIs (Application Programming Interfaces) have become central. They allow frontend
+                developers to fetch data dynamically from the backend, pushing the boundaries of what web apps can do.
+                Fetching
+                data, updating content in real-time, and connecting with third-party services are all facilitated by
+                APIs.
+            </p>
+        </div>
 
-<h2>Accessibility</h2>
-<p>Accessibility is the unsung hero of frontend development. Ensuring that websites are usable by everyone, including those with disabilities, is not just an ethical responsibility but also a legal one in many jurisdictions. Semantic HTML, keyboard navigation, and screen reader compatibility are just some aspects of creating an inclusive web.</p>
+        <div class="box">
+            <h2 id="animation">Web Animation and Interactivity</h2>
+            <p>Modern websites are no longer static. Then there's the world of frameworks and libraries. React, Vue, and
+                Angular
+                are just a few names in the vast ocean of technologies that assist developers in building scalable and
+                maintainable applications. While not necessary for every project, they offer powerful tools and
+                abstractions
+                that can greatly simplify complex tasks. With the power of CSS3 animations and JavaScript libraries like
+                GreenSock, frontend developers can create captivating animations and interactions. These not only make
+                websites
+                more engaging but also can improve user experience by providing feedback, guiding attention, and
+                illustrating
+                complex ideas.</p>
+        </div>
 
-<h2>Responsive Design</h2>
-<p id="deep-dive">When diving deep into frontend, one can't ignore the importance of responsive design. In a world dominated by different screen sizes — from mobiles to large desktop monitors — it's essential to ensure that websites look and function optimally across all devices. This is achieved using CSS frameworks like Bootstrap or through media queries and flexible grid layouts.</p>
+        <div class="box">
+            <h2 id="performance">Performance</h2>
+            <p>Performance is another cornerstone of frontend development. A website can be beautifully designed, but if
+                it
+                takes forever to load or lags during interactions, users will likely bounce off. Techniques like image
+                optimization, lazy loading, and minifying code are essential to keep websites snappy and responsive.</p>
+            <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*A4qOlRsdIHzRkibX1P7Smw.jpeg"
+                alt="Lazy load meme">
+        </div>
 
-<footer>
-    <a href="#top">Back to the top</a>
-</footer>
+        <div class="box">
+            <h2 id="accessibility">Accessibility</h2>
+            <p>Accessibility is the unsung hero of frontend development. Ensuring that websites are usable by everyone,
+                including those with disabilities, is not just an ethical responsibility but also a legal one in many
+                jurisdictions. Semantic HTML, keyboard navigation, and screen reader compatibility are just some aspects
+                of
+                creating an inclusive web.</p>
+        </div>
+
+        <div class="box">
+            <h2 id="responsive">Responsive Design</h2>
+            <p id="deep-dive">When diving deep into frontend, one can't ignore the importance of responsive design. In a
+                world
+                dominated by different screen sizes — from mobiles to large desktop monitors — it's essential to ensure
+                that
+                websites look and function optimally across all devices. This is achieved using CSS frameworks like
+                Bootstrap or
+                through media queries and flexible grid layouts.</p>
+        </div>
+    </div>
+
+    <form name="sendToFriend" role="form">
+        <h2>Send this article to a friend</h2>
+
+        <div class="form-columns">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" max="150">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <footer id="footer">
+        <a href="#top">Back to the top</a>
+    </footer>
 
 </body>
+
 </html>
