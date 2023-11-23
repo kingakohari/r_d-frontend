@@ -125,9 +125,9 @@ div.box {
 }
 
 div.box img {
-    max-width: 300px;
-    display: block; 
-    margin: auto;   
+  max-width: 300px;
+  display: block; 
+  margin: auto;   
 }
 
 h1,
