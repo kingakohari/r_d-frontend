@@ -106,7 +106,7 @@ div {
 }
 
 div#intro {
-  max-width: 1920px; 
+  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   padding: 0;
@@ -138,8 +138,8 @@ div.box {
 div.box img {
   min-width: 200px;
   max-width: calc(100% - 250px);
-  display: block; 
-  margin: auto;   
+  display: block;
+  margin: auto;
 }
 
 h1,
@@ -162,7 +162,8 @@ h1 {
   font-size: 3em;
 }
 
-h2, a[id] {
+h2,
+a[id] {
   scroll-margin-top: 80px;
 }
 
@@ -196,8 +197,8 @@ footer {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 360px) {
 
+@media screen and (max-width: 360px) {
   div.grid-container {
     gap: 20px;
     padding: 0 5px;
@@ -220,7 +221,8 @@ footer {
     font-size: 2em;
   }
 
-  h2, a[id] {
+  h2,
+  a[id] {
     scroll-margin-top: 120px;
   }
 
@@ -228,9 +230,71 @@ footer {
 
 @media screen and (min-width: 1920px) {
   div#intro {
-    max-width: 1920px; 
+    max-width: 1920px;
     padding-left: 100px;
   }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ffffff;
+    color: #333333;
+  }
+
+  .background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    z-index: -100;
+  }
+
+  a:link {
+    color: #3359a0;
+  }
+
+  a:visited {
+    color: #667799;
+  }
+
+  h1,
+  h2,
+  p {
+    color: #2a4d69;
+  }
+
+  nav {
+    background-color: rgb(230, 196, 231);
+    color: #2e2e2e;
+    filter: invert(0%);
+  }
+
+  div {
+    color: #757973ee;
+  }
+
+  div#intro {
+    all: revert;
+    max-width: 1920px;
+    padding-left: 100px;
+  }
+
+  div.box {
+    background-color: #eeeeee;
+    border-color: #333;
+  }
+
+  footer {
+    background-color: rgb(230, 196, 231);
+    filter: invert(0%);
+  }
+
 }
 
 /********* Form styling **********/
@@ -245,7 +309,7 @@ form {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   font-family: "Pontano Sans", sans-serif;
   color: #333333;
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 
 .form-columns {
@@ -267,7 +331,7 @@ textarea {
 input,
 textarea {
   border-radius: 4px;
-  background-color: #f2f2f2; 
+  background-color: #f2f2f2;
   border: 1px solid #ccc;
 }
 
