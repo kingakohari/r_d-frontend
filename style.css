@@ -106,7 +106,10 @@ div {
 }
 
 div#intro {
-  padding: 0 50px;
+  max-width: 1920px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
   white-space: normal;
   box-shadow: 0 0 5px #111711;
   text-align: justify;
@@ -114,22 +117,17 @@ div#intro {
 }
 
 div.grid-container {
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px 50px;
-  padding: 0 100px;
+  gap: 30px 5%;
+  margin: 0 auto;
+  padding: 0 40px;
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 600px) {
-  div.grid-container {
-    grid-template-columns: 1fr;
-    padding: 0 20px;
-  }
-}
-
 div.box {
-  padding: 20px;
+  padding: 20px 0;
   border: 0.5px solid #ccc;
   border-radius: 10px;
   text-align: center;
@@ -138,7 +136,8 @@ div.box {
 }
 
 div.box img {
-  max-width: 300px;
+  min-width: 200px;
+  max-width: calc(100% - 250px);
   display: block; 
   margin: auto;   
 }
@@ -155,7 +154,7 @@ h2 {
 h1 {
   margin-top: 1em;
   margin-bottom: 15px;
-  padding-top: 20px;
+  padding-top: 2em;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 1px;
@@ -164,7 +163,7 @@ h1 {
 }
 
 h2, a[id] {
-  scroll-margin-top: 70px;
+  scroll-margin-top: 80px;
 }
 
 p {
@@ -191,10 +190,47 @@ footer {
   filter: invert(100%);
 }
 
-iframe {
-  width: 100%;
-  height: 500px; /* Adjust as needed */
-  border: none; /* Optional, to remove the default border */
+@media screen and (max-width: 600px) {
+  div.grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 360px) {
+
+  div.grid-container {
+    gap: 20px;
+    padding: 0 5px;
+  }
+
+  nav a {
+    margin-right: 5px;
+  }
+
+  div#intro {
+    padding: 0 5px;
+  }
+
+  div.box {
+    padding: 5px 0;
+  }
+
+  h1 {
+    padding-top: 30%;
+    font-size: 2em;
+  }
+
+  h2, a[id] {
+    scroll-margin-top: 120px;
+  }
+
+}
+
+@media screen and (min-width: 1920px) {
+  div#intro {
+    max-width: 1920px; 
+    padding-left: 100px;
+  }
 }
 
 /********* Form styling **********/
