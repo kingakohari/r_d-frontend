@@ -228,12 +228,13 @@ footer {
 
 }
 
-@media screen and (min-width: 1920px) {
-  div#intro {
-    max-width: 1920px;
-    padding-left: 100px;
+@media screen and (min-width: 1440px) {
+  div#intro p {
+    text-align: center;
   }
 }
+
+/********* Light mode **********/
 
 @media (prefers-color-scheme: light) {
   body {
@@ -248,15 +249,23 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%);
+    /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
+    background-image: url(https://www.restonconcierge.com/wp-content/uploads/2016/07/free-office-wallpaper-26001-26685-hd-wallpapers.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: repeat;
     z-index: -100;
+    opacity: 0.25
+  }
+
+  nav {
+    background-color: #bdd8f1;
+    color: #3667a6;
+    filter: invert(0%);
   }
 
   a:link {
-    color: #3359a0;
+    color: #3667a6
   }
 
   a:visited {
@@ -269,20 +278,16 @@ footer {
     color: #2a4d69;
   }
 
-  nav {
-    background-color: rgb(230, 196, 231);
-    color: #2e2e2e;
-    filter: invert(0%);
-  }
-
   div {
     color: #757973ee;
   }
 
   div#intro {
     all: revert;
-    max-width: 1920px;
-    padding-left: 100px;
+  }
+
+  div#intro p {
+    color: #000;
   }
 
   div.box {
@@ -291,11 +296,12 @@ footer {
   }
 
   footer {
-    background-color: rgb(230, 196, 231);
+    background-color: #bdd8f1;
     filter: invert(0%);
   }
 
 }
+
 
 /********* Form styling **********/
 
