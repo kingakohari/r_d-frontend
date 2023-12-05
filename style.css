@@ -61,6 +61,19 @@ body {
   z-index: -100;
 }
 
+a[href] {
+  text-decoration: underline;
+}
+
+a[href]:hover {
+  color: #ff6600;
+}
+
+a[id] {
+  font-family: monospace;
+  font-weight: bold;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -93,7 +106,10 @@ div {
 }
 
 div#intro {
-  padding: 0 50px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
   white-space: normal;
   box-shadow: 0 0 5px #111711;
   text-align: justify;
@@ -101,22 +117,17 @@ div#intro {
 }
 
 div.grid-container {
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px 50px;
-  padding: 0 100px;
+  gap: 30px 5%;
+  margin: 0 auto;
+  padding: 0 40px;
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 600px) {
-  div.grid-container {
-    grid-template-columns: 1fr;
-    padding: 0 20px;
-  }
-}
-
 div.box {
-  padding: 20px;
+  padding: 20px 0;
   border: 0.5px solid #ccc;
   border-radius: 10px;
   text-align: center;
@@ -125,9 +136,10 @@ div.box {
 }
 
 div.box img {
-  max-width: 300px;
-  display: block; 
-  margin: auto;   
+  min-width: 200px;
+  max-width: calc(100% - 250px);
+  display: block;
+  margin: auto;
 }
 
 h1,
@@ -142,7 +154,7 @@ h2 {
 h1 {
   margin-top: 1em;
   margin-bottom: 15px;
-  padding-top: 20px;
+  padding-top: 2em;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 1px;
@@ -150,8 +162,9 @@ h1 {
   font-size: 3em;
 }
 
-h2 {
-  scroll-margin-top: 70px;
+h2,
+a[id] {
+  scroll-margin-top: 80px;
 }
 
 p {
@@ -166,14 +179,6 @@ span {
   font-style: italic;
 }
 
-a[href="#deep-dive"] {
-  text-decoration: underline;
-}
-
-a[href="#deep-dive"]:hover {
-  color: #ff6600;
-}
-
 footer {
   width: 100%;
   margin-top: 2em;
@@ -185,6 +190,118 @@ footer {
   color: rgb(32, 31, 29);
   filter: invert(100%);
 }
+
+@media screen and (max-width: 600px) {
+  div.grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  div.grid-container {
+    gap: 20px;
+    padding: 0 5px;
+  }
+
+  nav a {
+    margin-right: 5px;
+  }
+
+  div#intro {
+    padding: 0 5px;
+  }
+
+  div.box {
+    padding: 5px 0;
+  }
+
+  h1 {
+    padding-top: 30%;
+    font-size: 2em;
+  }
+
+  h2,
+  a[id] {
+    scroll-margin-top: 120px;
+  }
+
+}
+
+@media screen and (min-width: 1440px) {
+  div#intro p {
+    text-align: center;
+  }
+}
+
+/********* Light mode **********/
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ffffff;
+    color: #333333;
+  }
+
+  .background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
+    background-image: url(https://www.restonconcierge.com/wp-content/uploads/2016/07/free-office-wallpaper-26001-26685-hd-wallpapers.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    z-index: -100;
+    opacity: 0.25
+  }
+
+  nav {
+    background-color: #bdd8f1;
+    color: #3667a6;
+    filter: invert(0%);
+  }
+
+  a:link {
+    color: #3667a6
+  }
+
+  a:visited {
+    color: #667799;
+  }
+
+  h1,
+  h2,
+  p {
+    color: #2a4d69;
+  }
+
+  div {
+    color: #757973ee;
+  }
+
+  div#intro {
+    all: revert;
+  }
+
+  div#intro p {
+    color: #000;
+  }
+
+  div.box {
+    background-color: #eeeeee;
+    border-color: #333;
+  }
+
+  footer {
+    background-color: #bdd8f1;
+    filter: invert(0%);
+  }
+
+}
+
 
 /********* Form styling **********/
 
@@ -198,7 +315,7 @@ form {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   font-family: "Pontano Sans", sans-serif;
   color: #333333;
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 
 .form-columns {
@@ -220,7 +337,7 @@ textarea {
 input,
 textarea {
   border-radius: 4px;
-  background-color: #f2f2f2; 
+  background-color: #f2f2f2;
   border: 1px solid #ccc;
 }
 
