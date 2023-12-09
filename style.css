@@ -373,7 +373,7 @@ iframe {
   display: flex;
   flex-direction: column;
   width: 100%; 
-  min-height: 780px; 
+  min-height: 700px; 
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
