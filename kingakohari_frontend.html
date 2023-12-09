@@ -124,6 +124,28 @@
         <button type="submit">Send</button>
     </form>
 
+    <form name="sendToFriend" role="form-hu">
+        <h2>Cikk küldése ismerősnek</h2>
+
+        <div class="form-columns-hu">
+            <label for="name-hu">Név:</label>
+            <input type="text" id="name-hu" name="name-hu" required>
+
+            <label for="phone-hu">Telefonszám:</label>
+            <input type="tel" id="phone-hu" name="phone-hu">
+
+            <label for="email-hu">Email:</label>
+            <input type="email" id="email-hu" name="email-hu" required>
+
+            <label for="age-hu">Kora:</label>
+            <input type="number" id="age-hu" name="age-hu" min="0" max="150">
+
+            <label for="message-hu">Üzenet:</label>
+            <textarea id="message" name="message-hu"></textarea>
+        </div>
+
+        <button type="submit">Elküldés</button>
+    </form>
     <footer id="footer">
         <a href="#top">Back to the top</a>
     </footer>
