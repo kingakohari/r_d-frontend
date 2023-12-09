@@ -368,3 +368,18 @@ form h2 {
   text-align: center;
   color: #333;
 }
+
+iframe {
+  display: flex;
+  flex-direction: column;
+  width: 100%; 
+  min-height: 780px; 
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Pontano Sans", sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+}

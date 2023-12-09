@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a img {
+    border: none;
+  }
+  
+  button,
+  a {
+    cursor: pointer;
+    color: inherit;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button,
+  textarea,
+  select {
+    appearance: none !important;
+    border-radius: 0;
+  }
+  
+  /*End of CSS reset*/
+/* 
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: "Pontano Sans", sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+  }
+  
+  .form-columns {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 100%;
+  }
+  
+  label,
+  input,
+  textarea {
+    width: calc(100% - 16px);
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: "Space Grotesk", sans-serif;
+  }
+  
+  input,
+  textarea {
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+  }
+  
+  input#age {
+    position: relative;
+    width: 50px;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button {
+    width: calc(100% - 20px);
+    padding: 10px 8px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Russo One", sans-serif;
+    background-color: #99ff00;
+    color: #000;
+    filter: invert(100%);
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  form h2 {
+    margin-bottom: 8px;
+    text-align: center;
+    color: #333;
+  } */
