@@ -55,9 +55,10 @@ body {
   bottom: 0;
   left: 0;
   background-image: url("1767974.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   z-index: -100;
 }
 
@@ -109,11 +110,15 @@ div#intro {
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0;
   white-space: normal;
-  box-shadow: 0 0 5px #111711;
   text-align: justify;
-  background: linear-gradient(to bottom, #000000, #333444, #111711);
+  background: linear-gradient(
+    to bottom, 
+    #000000 0%, 
+    #333444 50%, 
+    #111711 85%, 
+    transparent 100%
+  );
 }
 
 div.grid-container {
@@ -251,9 +256,10 @@ footer {
     left: 0;
     /* background-image: linear-gradient(-225deg, #E3FDF5 0%, #FFE6FA 100%); */
     background-image: url(https://www.restonconcierge.com/wp-content/uploads/2016/07/free-office-wallpaper-26001-26685-hd-wallpapers.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     z-index: -100;
     opacity: 0.25
   }
