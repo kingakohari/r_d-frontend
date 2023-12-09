@@ -35,10 +35,14 @@
   
   /*End of CSS reset*/
 
-  .bg-custom {
-    padding: 1em;
-    background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.8) 93%);
-    color: #d63384;
+.bg-custom {
+  padding: 1em;
+  background: linear-gradient(106.5deg, rgba(255, 215, 185, 0.91) 23%, rgba(223, 159, 247, 0.8) 93%);
+  color: #d63384;
+}
+
+.form-control.custom-width {
+  width: 5em; 
 }
 
 label {
