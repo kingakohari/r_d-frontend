@@ -39,10 +39,10 @@ select {
 
 :root {
   --primary-color-skin1: #c1e7d2;
-  --secondary-color-skin1: #ff7af4;
+  --secondary-color-skin1: #ab99fa;
 
-  --primary-color-skin2: #f5f4eb;
-  --secondary-color-skin2: #6ee7cf;
+  --primary-color-skin2: #bdbdbd;
+  --secondary-color-skin2: #893aa8;
 }
 
 
@@ -340,11 +340,11 @@ footer {
   }
 
   a:link {
-    color: #3667a6
+    color: #12315a
   }
 
   a:visited {
-    color: #667799;
+    color: #5a82d1;
   }
 
   h1,
