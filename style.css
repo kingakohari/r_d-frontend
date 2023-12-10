@@ -44,7 +44,7 @@ select {
   --primary-color-skin2: #bdbdbd;
   --secondary-color-skin2: #893aa8;
 }
-
+/**************************/
 
 body {
   width: 100%;
@@ -88,7 +88,7 @@ a[id] {
 
 nav {
   position: fixed;
-  top: 25px;
+  top: 0;
   width: 100%;
   text-align: center;
   font-size: 15px;
@@ -116,7 +116,7 @@ title {
 
 /********Skin selector**********/
 
-#skin1, #skin2 {
+/* #skin1, #skin2 {
   display: none;
 }  
 
@@ -145,29 +145,29 @@ title {
   background-color: #bdbdbd;
 }
 
-#revert:checked + label {
+ #revert:checked + label {
   background-color: #ffe0b2; 
-}
+} */
 
 
 /********Skin selector logic**********/
-#skin1:checked ~ form  {
+#skin1:target ~ form  {
   background-color: var(--primary-color-skin1);
   color: var(--secondary-color-skin1);
 }
 
-#skin1:checked ~ nav,
-#skin1:checked ~ footer  {
+#skin1:target ~ nav,
+#skin1:target ~ footer  {
   background-color: var(--secondary-color-skin1);
 }
 
-#skin2:checked ~ form {
+#skin2:target ~ form {
   background-color: var(--primary-color-skin2);
   color: var(--secondary-color-skin2);
 }
 
-#skin2:checked ~ nav,
-#skin2:checked ~ footer  {
+#skin2:target ~ nav,
+#skin2:target ~ footer  {
   background-color: var(--secondary-color-skin2);
 }
 
