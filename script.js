@@ -55,11 +55,11 @@ async function loadEvent() {
       "beforeend",
       `
         <div id="author">
-            <p id="name">By ${author.name}</p>
+            <p id="a-name">By ${author.name}</p>
             <div id="author-info">
-                <p id="email"><a href="mailto:${author.email}">${author.email}</a></p>
-                <p id="phone">Tel: ${author.phone}</p>
-                <p id="company">Company:<br> ${author.company.name}</p>   
+                <p id="a-email"><a href="mailto:${author.email}">${author.email}</a></p>
+                <p id="a-phone">Tel: ${author.phone}</p>
+                <p id="a-company">Company:<br> ${author.company.name}</p>   
             </div>              
         </div>
         `
