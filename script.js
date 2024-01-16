@@ -1,7 +1,7 @@
 async function loadEvent() {
   const article = document.querySelector("article");
 
-// Hf 6-1
+  // Hf 6-1
 
   function readingTime() {
     const text = article.innerText;
@@ -17,7 +17,7 @@ async function loadEvent() {
   }
   readingTime();
 
-// Hf 6-2
+  // Hf 6-2
 
   const searchBox = document.getElementById("searchBox");
   const originalContent = article.innerHTML;
@@ -39,18 +39,18 @@ async function loadEvent() {
       article.innerHTML = originalContent.replace(
         regex,
         '<span class="highlight">$1</span>' // Returns any text matching "word" in a span
-      ); 
+      );
     }
   }
 
-// Hf7
+  // Hf7
 
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
 
     if (!response.ok) {
       throw new Error(`HTTP response error: ${response.status}`);
-    };
+    }
 
     const users = await response.json();
     let authorId = Math.floor(Math.random() * users.length);
