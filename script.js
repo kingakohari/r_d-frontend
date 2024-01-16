@@ -49,9 +49,9 @@ async function loadEvent() {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
 
     if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
+      throw new Error(`HTTP response error: ${response.status}`);
     }
-    
+
     const users = await response.json();
     let authorId = Math.floor(Math.random() * users.length);
     let author = users[authorId];
