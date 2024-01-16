@@ -50,7 +50,7 @@ async function loadEvent() {
 
     if (!response.ok) {
       throw new Error(`HTTP response error: ${response.status}`);
-    }
+    };
 
     const users = await response.json();
     let authorId = Math.floor(Math.random() * users.length);
