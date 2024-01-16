@@ -47,11 +47,16 @@ async function loadEvent() {
 
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    
     const users = await response.json();
     let authorId = Math.floor(Math.random() * users.length);
     let author = users[authorId];
 
-    document.querySelector("article").insertAdjacentHTML(
+    article.insertAdjacentHTML(
       "beforeend",
       `
         <div id="author">
