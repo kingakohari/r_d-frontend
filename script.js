@@ -43,7 +43,7 @@ async function loadEvent() {
     }
   }
 
-  // Hf7
+  // Hf 7
 
   try {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
