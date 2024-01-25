@@ -11,7 +11,7 @@ async function loadEvent() {
     document.querySelector("h1").insertAdjacentHTML(
       "afterend",
       `
-        <p><span id="time"></span>(Estimated reading time: ${time} minutes)</p>
+        <p id="time">(Estimated reading time: ${time} minutes)</p>
         `
     );
   }
