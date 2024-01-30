@@ -57,7 +57,7 @@ async function loadEvent() {
     let author = users[authorId];
 
     article.insertAdjacentHTML(
-      "beforeend",
+      "afterend",
       `
         <div id="author">
             <p id="a-name">By <b><em>${author.name}</em></b></p>
