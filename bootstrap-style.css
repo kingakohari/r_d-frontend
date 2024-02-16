@@ -57,3 +57,9 @@ button.btn-primary {
   --bs-btn-hover-bg: #f5d546;
   --bs-btn-hover-color: #181a10;
 }
+
+#accessible:target~form,
+#accessible:target~form * {
+  background-color: #333333;
+  color:  #F5F5F5;
+}

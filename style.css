@@ -172,6 +172,20 @@ title {
   background-color: var(--secondary-color-skin2);
 }
 
+#accessible:target~nav,
+#accessible:target~nav *,
+#accessible:target~main,
+#accessible:target~main *,
+#accessible:target~form,
+#accessible:target~form *,
+#accessible:target~footer,
+#accessible:target~footer *,
+#accessible:target~div,
+#accessible:target~div * {
+  background-color: #333333;
+  color:  #F5F5F5;
+}
+
 /* #revert:checked ~ form {
   background-color: initial;
   color: initial; 
@@ -313,6 +327,10 @@ footer {
   filter: invert(100%);
 }
 
+#statement h2 {
+  margin-left: 60px;
+}
+
 @media screen and (max-width: 600px) {
   div.grid-container {
     display: flex;
@@ -438,6 +456,9 @@ footer {
     filter: invert(0%);
   }
 
+  footer a {
+    margin-right: 60px;
+  }
 }
 
 
