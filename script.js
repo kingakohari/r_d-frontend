@@ -61,7 +61,7 @@ async function loadEvent() {
       `
         <div id="author">
             <p id="a-name" role="heading">By <b><em>${author.name}</em></b></p>
-            <div id="author-info" role="heading">
+            <div id="author-info">
                 <p id="a-email"><a href="mailto:${author.email}">${author.email}</a></p>
                 <p id="a-phone">Tel: ${author.phone}</p>
                 <p id="a-company">Company:<br> ${author.company.name}</p>   
