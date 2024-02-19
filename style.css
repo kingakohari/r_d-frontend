@@ -183,7 +183,7 @@ title {
 #accessible:target~div,
 #accessible:target~div * {
   background-color: #333333;
-  color:  #F5F5F5;
+  color:  #f5f5f5;
 }
 
 /* #revert:checked ~ form {
