@@ -1,15 +1,14 @@
 async function loadEvent() {
-
   const hamburgerIcon = document.querySelector(".hamburger-icon");
-  const navContent = document.querySelector('.nav-content');
+  const navContent = document.querySelector(".nav-content");
 
-  hamburgerIcon.addEventListener('click', function() {
-      navContent.classList.toggle('show');
-      if (navContent.classList.contains('show')) {
-          this.innerHTML = '&#10005'; // Change to 'X' icon
-      } else {
-          this.innerHTML = '&#9776;'; // Change back to hamburger icon
-      }
+  hamburgerIcon.addEventListener("click", function () {
+    navContent.classList.toggle("show");
+    if (navContent.classList.contains("show")) {
+      this.innerHTML = "&#10005"; // Change to 'X' icon
+    } else {
+      this.innerHTML = "&#9776;"; // Change back to hamburger icon
+    }
   });
 
   const article = document.querySelector("article");
